@@ -1,11 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/bc436b3cc3.js" crossorigin="anonymous"></script>
+    <!-- font family lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    hello
+
+<body class="font-lato">
+     <header class="container mx-auto">
+       <!-- navbar section -->
+       <div class="navbar lg:bg-[#F85559] mt-8 rounded-full justify-between flex-row-reverse lg:flex-row ">
+        <div class="">
+          <div class="dropdown">
+            <label tabindex="0" class="lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"  viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+          </div>
+        </div>
+        <div class=" hidden lg:flex text-white p-6">
+          <ul class=" menu-horizontal gap-7 font-medium">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="text-black lg:text-white font-bold ml- gap-1">
+            <img src="./images/logo.png" alt="">
+            <p class="text-2xl mr-">Fruit Burst</p>
+        </div>
+            <div class="rounded-full bg-white lg:block hidden pl-4 pr-4 py-2 w-[400px] mr-5">
+              <input type="text" placeholder="Search here" />
+              <i class="fa-solid fa-magnifying-glass ml-40 text-black"></i>
+            </div>
+      </div>
+
+    </header>
+    <main class="container mx-auto ">
+        <!-- deal of the day section -->
+        <section class="my-8 p-4">
+            <div class="flex flex-col lg:flex-row text-center lg:text-start justify-between">
+                <div>
+                    <h2 class="text-4xl font-extrabold">Deal of the day</h2>
+                    <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <div>
+                    <div class="grid grid-flow-col gap-5 justify-center auto-cols-max">
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                          </span>
+                          days
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                          </span>
+                          hours
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                          </span>
+                          min
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl">
+                            <span style="--value:35;"></span>
+                          </span>
+                          sec
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                <div class="card mt-10 space-y-4 bg-[#FFF] border pb-4 ">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" items-center">
+                      <h2 class="text-2xl font-medium text-center mt-10 mb-3">12.90$ - 18.85$</h2>
+                      <p class="text-center">Apples</p>
+                    </div>
+                    <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <a class="text-center text-[#F85559]" href="">Details</a>
+                  </div>
+                <div class="card mt-10 space-y-4 bg-[#FFF] border pb-4 ">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" items-center">
+                      <h2 class="text-2xl font-medium text-center mt-10 mb-3">12.90$ - 18.85$</h2>
+                      <p class="text-center">Apples</p>
+                    </div>
+                    <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <a class="text-center text-[#F85559]" href="">Details</a>
+                  </div>
+                <div class="card mt-10 space-y-4 bg-[#FFF] border pb-4 ">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" items-center">
+                      <h2 class="text-2xl font-medium text-center mt-10 mb-3">12.90$ - 18.85$</h2>
+                      <p class="text-center">Apples</p>
+                    </div>
+                    <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <a class="text-center text-[#F85559]" href="">Details</a>
+                  </div>
+                <div class="card mt-10 space-y-4 bg-[#FFF] border pb-4 ">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class=" items-center">
+                      <h2 class="text-2xl font-medium text-center mt-10 mb-3">12.90$ - 18.85$</h2>
+                      <p class="text-center">Apples</p>
+                    </div>
+                    <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                      <a class="text-center text-[#F85559]" href="">Details</a>
+                  </div>
+            </div>
+            <div class="text-center">
+                <button class="text-white bg-[#F85559] px-5 py-3 rounded-lg mt-8">Shop All</button>
+            </div>
+        </section>
+        <!-- meet the team section -->
+        <section class="mb-5">
+            <div class="hero min-h-[500px] " style="background-image: url('./images/team.png');">
+                <div class="hero-overlay bg-[#121212B3]"></div>
+                <div>
+                    <h1 class="mb-5 text-center text-[#FFF] text-5xl font-bold">Meet the team section</h1>
+                    <p class="mb-5  text-center text-[#FFF] font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <!-- card container -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                    <div class="text-white border border-red-500 ">
+                      <img src="./images/member1.png" alt="">
+                      <h2 class="text-2xl font-bold">Awlad Hossain</h2>
+                      <p>Fruits Expert</p>
+                    </div>
+                    <div class="text-white w-44 border border-red-500">
+                      <img src="./images/member1.png" alt="">
+                      <h2 class="text-2xl font-bold">Awlad Hossain</h2>
+                      <p>Fruits Expert</p>
+                    </div>
+                    <div class="text-white w-44 border border-red-500">
+                      <img src="./images/member1.png" alt="">
+                      <h2 class="text-2xl font-bold">Awlad Hossain</h2>
+                      <p>Fruits Expert</p>
+                    </div>
+                    <div class="text-white w-44 border border-red-500">
+                      <img src="./images/member1.png" alt="">
+                      <h2 class="text-2xl font-bold">Awlad Hossain</h2>
+                      <p>Fruits Expert</p>
+                    </div>
+                  </div>
+                </div>
+             </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
+
 </html>
